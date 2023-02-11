@@ -3,12 +3,9 @@
     <head>
         <meta charset="UTF-8">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
         <link rel="stylesheet" href="./assets/css/style.css">
-
         <!-- ======BOX ICONS====== -->
         <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
-
         <title>sachin kumar's Portfolio</title>
     </head>
     <body>
@@ -21,11 +18,12 @@
 
                 <div class="nav__menu" id="nav-menu">
                     <ul class="nav__list">
-                        <li class="nav__item"><a href="#home" class="nav__link active">Home</a></li>
-                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
-                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
-                        <li class="nav__item"><a href="#work" class="nav__link">Projects</a></li>
-                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                        <li class="nav__item"><a href="#home" class="nav__link home active">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link about">About</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link skills">Skills</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link projects">Projects</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link contact">Contact</a></li>
+                        <li class="nav__item"><a class="nav-link resume" id="resume-button-1" href="#resume">Download Resume</a></li>
                     </ul>
                 </div>
 
@@ -41,7 +39,7 @@
                 <div class="home__data">
                     <h1 class="home__title">Hi,<br>I'am <span class="home__title-color">Sachin Kumar</span><br>Web Developer</h1>
 
-                    <a href="https://drive.google.com/file/d/14tU7ld5i5gaUzkvLCBB-OF6m7CObhxhT/view?usp=sharing" target="_blank" class="button">Resume</a>
+                    <a href="https://drive.google.com/file/d/14tU7ld5i5gaUzkvLCBB-OF6m7CObhxhT/view?usp=sharing" target="_blank" id="resume-button-2" class="button">Resume</a>
                 </div>
 
                 <div class="home__social">
@@ -73,8 +71,8 @@
                     </div>
                     
                     <div>
-                        <h2 class="about__subtitle">I'am as a Developer</h2>
-                        <p class="about__text">An enthusiastic full-stack web developer with the specialization in Backend. Having 1200+ hours of coding , 100+ hours of soft skill training .Self Motivated, keen to learn and eager to build new and creative web products as per guidelines .Looking forward to work as a developer and enhancing my technical skill while creating challenging products .</p>           
+                        <h2 class="about__subtitle" id="user-detail-name">I'am as a Developer</h2>
+                        <p class="about__text" id="user-detail-intro">An enthusiastic full-stack web developer with the specialization in Backend. Having 1200+ hours of coding , 100+ hours of soft skill training .Self Motivated, keen to learn and eager to build new and creative web products as per guidelines .Looking forward to work as a developer and enhancing my technical skill while creating challenging products .</p>           
                     </div>                                   
                 </div>
             </section>
@@ -87,51 +85,51 @@
                     <div>
                         <h2 class="skills__subtitle">Profesional Skills</h2>
                         <p class="skills__text">For start with same basic tools and always ready to learn new tech tools and help me to improve my skill and looking one step towards to my success</p>
-                        <div class="skills__data">
+                        <div class="skills-card">
                             <div class="skills__names">
                                 <i class='bx bxl-html5 skills__icon'></i>
-                                <span class="skills__name">HTML5</span>
+                                <span class="skills__name skills-card-name">HTML5</span>
                             </div>
                             <div class="skills__bar skills__html">
 
                             </div>
-                            <div>
+                            <div class="skills-card-img">
                                 <span class="skills__percentage">95%</span>
                             </div>
                         </div>
-                        <div class="skills__data">
+                        <div class="skills-card">
                             <div class="skills__names">
                                 <i class='bx bxl-css3 skills__icon'></i>
-                                <span class="skills__name">CSS3</span>
+                                <span class="skills__name skills-card-name">CSS3</span>
                             </div>
                             <div class="skills__bar skills__css">
                                 
                             </div>
-                            <div>
+                            <div class="skills-card-img">
                                 <span class="skills__percentage">85%</span>
                             </div>
                         </div>
-                        <div class="skills__data">
+                        <div class="skills-card">
                             <div class="skills__names">
                                 <i class='bx bxl-javascript skills__icon' ></i>
-                                <span class="skills__name">JAVASCRIPT</span>
+                                <span class="skills__name skills-card-name">JAVASCRIPT</span>
                             </div>
                             <div class="skills__bar skills__js">
                                 
                             </div>
-                            <div>
+                            <div class="skills-card-img">
                                 <span class="skills__percentage">65%</span>
                             </div>
                         </div>
-                        <div class="skills__data">
+                        <div class="skills-card">
                             <div class="skills__names">
                                 <i class='bx bxs-paint skills__icon'></i>
-                                <span class="skills__name">Java</span>
+                                <span class="skills__name skills-card-name">Java</span>
                             </div>
                             <div class="skills__bar skills__ux">
                                 
                             </div>
-                            <div>
+                            <div class="skills-card-img">
                                 <span class="skills__percentage">75%</span>
                             </div>
                         </div>
@@ -148,18 +146,39 @@
                 <h2 class="section-title">Projects</h2>
 
                 <div class="work__container bd-grid">
-                    <a href="https://scintillating-malasada-e3aa60.netlify.app/" target="_blank" class="work__img">
-                        <img src="assets/img/work1.jpg" alt="">
-                        <p style="color: #00c853; padding-left: 10px;" > <br> <span style="color: #0d1730; font-weight: bolder;">ELITE Store</span> is a site where people can buy and sell products and services An collaborate project constructed and executed in 5 days</p>
-                    </a>
-                    <a href="https://prismatic-babka-a21624.netlify.app/" target="_blank" class="work__img">
-                        <img src="assets/img/work2.jpg" alt="">
-                        <p style="color: #00c853; padding-left: 10px;"> <br><span style="color: #0d1730; font-weight: bolder;">Aroma</span> is a site where people can buy and sell products and services An collaborate project constructed and executed in 5 days</p>
-                    </a>
-                    <a href="https://amazing-croissant-708eb9.netlify.app/" target="_blank" class="work__img">
-                        <img src="assets/img/work3.jpg" alt="">
-                        <p style="color: #00c853; padding-left: 10px;"> <br> <span style="color: #0d1730; font-weight: bolder;">Mailtrap</span> is a site where people can deal with mails and API services An individual project constructed and executed in 5 days</p>
-                    </a>
+                    <div class="work__img">
+                        <p>
+                            <h2 class="project-title">Elite Store</h2>
+                            <p class="project-description"><span class="project-tech-stack">Elite Store</span>is a site where people can buy and sell beauty products. it's A collaborate constructed and executed in 5 days </p>
+                            <div class="pro">
+                            <button style="margin-bottom: 12px;" class="button-89 project-deployed-link" role="button"><a href="https://scintillating-malasada-e3aa60.netlify.app/" target="_blank">Demo</a></button>
+                            <button style="margin-bottom: 12px;" class="button-89 project-github-link" role="button"><a href="https://github.com/gsandha/fluffy-collar-7061" target="_blank">Github</a></button>
+                            </div>
+                        </p>
+                        <p><img src="assets/img/work1.jpg" alt=""></p>
+                    </div>
+                    <div class="work__img">
+                        <p>
+                            <h2 class="project-title">Elite Store</h2>
+                            <p class="project-description"><span class="project-tech-stack">Elite Store</span>is a site where people can buy and sell beauty products. it's A collaborate constructed and executed in 5 days </p>
+                            <div class="pro">
+                            <button style="margin-bottom: 12px;" class="button-89 project-deployed-link" role="button"><a href="https://prismatic-babka-a21624.netlify.app/" target="_blank">Demo</a></button>
+                            <button style="margin-bottom: 12px;" class="button-89 project-github-link" role="button"><a href="https://github.com/fw21-0395/attractive-songs-1315" target="_blank">Github</a></button>
+                        </div>
+                        </p>
+                        <div><img src="assets/img/work2.jpg" alt=""></div>
+                    </div>
+                    <div class="work__img">
+                        <p>
+                            <h2 class="project-title">Elite Store</h2>
+                            <p class="project-description"><span class="project-tech-stack">Elite Store</span>is a site where people can buy and sell beauty products. it's A Individual constructed and executed in 5 days </p>
+                            <div class="pro">
+                            <button style="margin-bottom: 12px;" class="button-89 project-deployed-link" role="button"><a href="https://amazing-croissant-708eb9.netlify.app/" target="_blank">Demo</a></button>
+                            <button style="margin-bottom: 12px;" class="button-89 project-github-link" role="button"><a href="https://github.com/sachinkrk/selfish-skin-4499" target="_blank">Github</a></button>
+                        </div>
+                        </p>
+                        <p><img src="assets/img/work4.jpg" alt=""></p>
+                    </div>
                     <!-- <a href="" class="work__img">
                         <img src="assets/img/work4.jpg" alt="">
                     </a>
@@ -171,18 +190,36 @@
                     </a> -->
                 </div>
             </section>
+  
+            <!--===== github =====-->
+            <section id="github-calender-section" class="contact section">
+                <h2 class="section-title">Github Calender</h2>
+                <div class="react-activity-calendar"><img src="" alt=""></div>
+            </section>
+        
+            <!--===== github-status =====-->
+            <section id="github-stats-section" class="contact section">
+                <h2 class="section-title">Github Statistics</h2>
+                <div id="github-streak-stats" data-src=""><img src="https://github-readme-stats.vercel.app/api/top-langs?username=sachinkrk&show_icons=true&locale=en&layout=compact" alt=""></div>
+                <div id="github-top-langs" data-src=""><img src="https://github-readme-stats.vercel.app/api?username=sachinkrk&show_icons=true&locale=en" alt=""></div>
+                <div id="github-stats-card" data-src=""><img src="https://github-readme-streak-stats.herokuapp.com/?user=sachinkrk&" alt=""></div>
+            </section>
 
             <!--===== CONTACT =====-->
             <section class="contact section" id="contact">
                 <h2 class="section-title">Contact</h2>
 
                 <div class="contact__container bd-grid">
-                    <form action="" class="contact__form">
+                    <!-- <form action="" class="contact__form">
                         <input type="text" placeholder="Name" class="contact__input">
                         <input type="mail" placeholder="Email" class="contact__input">
                         <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
                         <input type="button" value="Submit" class="contact__button button">
-                    </form>
+                    </form> -->
+                    <a id="contact-github" href="">github-profile</a>
+                    <a id="contact-linkedin" href="">linkedin-profile</a>
+                    <p id="contact-phone">phone-number</p>
+                    <p id="contact-email">email</p>
                 </div>
             </section>
         </main>
@@ -191,9 +228,10 @@
         <footer class="footer">
             <p class="footer__title">Thanx for visit.</p>
             <div class="footer__social">
-                <a href="#" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
-                <a href="#" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
-                <a href="#" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+                <a href="#" id="contact-github" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+                <a href="#" id="contact-linkedin" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+                <a href="#" id="contact-phone" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+                <a href="#" id="contact-email" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
             </div>
             <p class="footer__copy">&#169; sachin-kumar. All rigths reserved</p>
         </footer>
