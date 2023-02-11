@@ -79,7 +79,6 @@ img {
   --b: 3px;   /* border thickness */
   --s: .45em; /* size of the corner */
   --color: #373B44;
-  
   padding: calc(.5em + var(--s)) calc(.9em + var(--s));
   color: var(--color);
   --_p: var(--s);
@@ -397,6 +396,27 @@ img {
   transform: scale(1.1);
 }
 
+.center{
+  text-align: center;
+  padding: 0px 5px;
+}
+
+.pro{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0px 10px 10px 10px;
+}
+
+/* ===== Github =====*/
+
+#github-streak-stats,#github-top-langs,#github-stats-card{
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
 /* ===== CONTACT =====*/
 .contact__input {
   width: 100%;
@@ -416,6 +436,12 @@ img {
   font-size: var(--normal-font-size);
   cursor: pointer;
   margin-left: auto;
+}
+
+.flex-box{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 /* ===== FOOTER =====*/
